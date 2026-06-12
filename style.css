@@ -1,0 +1,160 @@
+/* Reset de Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f5;
+    color: #2c3e50;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #1b5e20;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Cards de Conteúdo */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    border-left: 5px solid #4caf50;
+}
+
+.card h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.texto-base p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Estilos do Quiz */
+.quiz-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.quiz-item p {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.quiz-item label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Pilares Interativos */
+.pilares-container {
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 15px 0;
+}
+
+.pilar {
+    display: table-cell;
+    background: #e8f5e9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+    transition: all 0.3s ease;
+    width: 33.33%;
+}
+
+.pilar:hover {
+    background: #c8e6c9;
+    transform: translateY(-2px);
+}
+
+/* Boxes Dinâmicos (JS) */
+.resultado, .info-pilar-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease;
+}
+
+.resultado {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    font-weight: bold;
+}
+
+.info-pilar-box {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    color: #5d4037;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+}

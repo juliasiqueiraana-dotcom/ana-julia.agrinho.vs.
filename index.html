@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustentabilidade e Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sustentabilidade Viva</h1>
+            <p>Equilibrando o desenvolvimento e o cuidado com a natureza</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card texto-base">
+            <h2>O Desafio da Nossa Geração</h2>
+            <p>A sustentabilidade é um tema muito importante atualmente, porque percebemos que o meio ambiente está cada vez mais afetado pelas ações humanas. Por isso, é necessário pensar em formas de equilibrar o desenvolvimento da sociedade com o cuidado da natureza, principalmente na agricultura, já que isso influencia diretamente o nosso futuro e o das próximas gerações.</p>
+            <p>Atualmente, problemas como desmatamento, poluição e queimadas causam muitos impactos no planeta. De acordo com informações da <strong>Embrapa</strong>, a agricultura sustentável é essencial para produzir alimentos sem prejudicar tanto a natureza, ajudando a manter o equilíbrio ambiental.</p>
+        </section>
+
+        <section class="card quiz-section">
+            <h2>Quiz da Consciência Ambiental</h2>
+            <p>Muitas pessoas ainda não fazem a sua parte. Pequenas mudanças no dia a dia fazem a diferença! Avalie suas atitudes:</p>
+            
+            <form id="quizForm">
+                <div class="quiz-item">
+                    <p>1. Você costuma separar os materiais recicláveis na sua casa?</p>
+                    <label><input type="radio" name="p1" value="10" required> Sim, sempre</label>
+                    <label><input type="radio" name="p1" value="0"> Não / Às vezes</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>2. Você evita o desperdício de água (fechando a torneira ao escovar dentes, banhos rápidos)?</p>
+                    <label><input type="radio" name="p2" value="10" required> Sim, sempre</label>
+                    <label><input type="radio" name="p2" value="0"> Não / Às vezes</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>3. Você evita jogar lixo nas ruas e sempre descarta no local correto?</p>
+                    <label><input type="radio" name="p3" value="10" required> Sim, sempre</label>
+                    <label><input type="radio" name="p3" value="0"> Não / Às vezes</label>
+                </div>
+
+                <button type="button" onclick="calcularPontuacao()">Verificar Meu Impacto</button>
+            </form>
+
+            <div id="resultadoQuiz" class="resultado hidden"></div>
+        </section>
+
+        <section class="card acao-conjunta">
+            <h2>Pacto pelo Futuro</h2>
+            <p>Para garantir mais qualidade de vida, precisamos que três pilares fundamentais trabalhem em total sinergia. Clique neles para entender o papel de cada um:</p>
+            
+            <div class="pilares-container">
+                <div class="pilar" onclick="mostrarInfo('populacao')">
+                    <h3>População</h3>
+                </div>
+                <div class="pilar" onclick="mostrarInfo('empresas')">
+                    <h3>Empresas</h3>
+                </div>
+                <div class="pilar" onclick="mostrarInfo('governo')">
+                    <h3>Governo</h3>
+                </div>
+            </div>
+            
+            <div id="infoPilar" class="info-pilar-box hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Consciência e Sustentabilidade Global. Juntos por um futuro melhor.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
